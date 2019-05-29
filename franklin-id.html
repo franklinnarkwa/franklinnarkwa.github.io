@@ -3,43 +3,102 @@
  <head>
   <meta charset="UTF-8">
   <title>Franklin, ID | Weather Site</title>
-  <meta name="description" content="Short Description of the page.">
+  <meta name="description" content="Short Description of the franklin_id.">
   <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/style.css" media="screen"
  </head>
  <body>
-     <header>
-        <img src="./weather/images/logo.jpeg" alt="Weather Site logo"/>   
-        <h1>Weather site logo</h1>
-        <h1>Franklin, ID</h1>
-        <ul>
-            <li><b>Zip</b>: 83237</li>
-            <li><b>Elevation</b>:4968 ft</li>
-            <li><b>Location</b>: 42.07'N,111 79 W N</li>
-            
-        </ul>
-     </header>
-     <nav>
-        <ul>
-         <li><a href="#" title="Go to the Weather Site home page">Current</a></li>
-        </ul>
-     </nav>
-     <main>
-         <section>
-                <img src="./weather/images/weather-tile.png" alt="Temperature"/> 
-         </section>
-         <section>
-                <img src="./weather/images/weather-tile.png" alt="Wind"/> 
-         </section>
-         <section>
-                <img src="./weather/images/raindrops.jpg" alt="rain"/> 
-         </section>
-         <section>
-                <img src="./weather/images/weather-nav-bar.png" alt="Weather Site logo"/> 
-         </section>
+              <header id="page-header">
+                <img id="logo" src="/franklinnarkwa.github.io/weather/images/logo.jpg" alt="logo">
+                <h1 id="site-brand">The Weather Site</h1>
+              </header>
+              <nav id="navforpage">
 
-    </main>
-      
- </body>
+                <a href="https://www.google.com">Search</a>
+                <a href="franklin-id.html">Franklin</a>
+
+
+                <ul>
+                       <li>
+                       <a href="#" title="Go to the Weather homepage">Current</a>
+                       </li>
+
+                       <li>
+                              <a href="#" title="searchWeather Site homepage">Search</a>
+                       </li>
+
+                       <li>
+                              <a href="#" title="go to theFranklin-Idaho WeatherSite homepage">Franklin</a>
+                       </li>
+
+                       <li>
+                              <a href="#" title="go to theGreenville-Idaho WeatherSite homepage">Greenville</a>
+                       </li>
+                
+                     </ul>
+
+              </nav>
+              <main>
+                <section id="heading">
+                  <h2>Franklin, Idaho</h2>
+            
+                  <p id='elev'>
+                    <strong>Zip: </strong>83237 |&nbsp; 
+                    <strong>Elevation:&nbsp; </strong>
+                    <span id='elevation'>4968</span> ft. |&nbsp; 
+                    <strong>Location: &nbsp;</strong>42.07&#176; N, 111.97&#176; W
+                  </p>
+            
+                </section>
+                <section id="content" class='rain'>
+                  <section id="temp" class="tile">
+                    <h2>Temperature</h2>
+                    <h3 id="deg">
+                      <div id='realtemp'>24</div>&deg;F
+
+
+                    </h3>
+                    <p>
+                      <span id="high-temp">34&deg;F</span>
+                      <span id="low-temp">21&deg;F</span>
+                      <p id="feels-like">Feels like <span id="feels">25</span>&deg;F</p> <br><br>
+
+                  </section>
+                  <section id="wind" class="tile">
+                    <h2>Wind</h2>
+                    <section id='test'>
+                      <div id="dial" class='s'></div>
+                      <div id='mph'> 2 mph</div>
+                    </section>
+                    <p><strong>Direction: </strong>NW</p>
+                    <p><strong>Gusts: </strong>5mph</p>
+                  </section>
+                  <section id="summary" class="tile">
+                    <h2>Clear</h2>
+                   
+                  </section>
+                </section>
+              </main>
+              <footer>
+                <section id="hourly-forecast" class="tile">
+                  <h2>Hourly Forecast</h2>
+                  <ul>
+                    <li>10am: 41&deg;F | </li>
+                    <li>11am: 41&deg;F | </li>
+                    <li>12pm: 41&deg;F | </li>
+                    <li>1pm: 41&deg;F | </li>
+                    <li>2pm: 41&deg;F | </li>
+                    <li>3pm: 41&deg;F | </li>
+                    <li>4pm: 42&deg;F | </li>
+                    <li>5pm: 44&deg;F | </li>
+                    <li>6pm: 44&deg;F | </li>
+                    <li>7pm: 46&deg;F | </li>
+                    <li>8pm: 49&deg;F | </li>
+                    <li>9pm: 51&deg;F | </li>
+                    <li>10pm: 55&deg;F</li>
+                  </ul>
+                </section>
+              </body>               
  <footer>
     &copy;2019, The Weather Site
    </footer>
