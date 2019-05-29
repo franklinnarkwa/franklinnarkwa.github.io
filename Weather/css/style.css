@@ -190,7 +190,14 @@ ul li {
 footer {
   margin-bottom: 2em;
 }
-
+#page-footer {
+  background-color: #0e89d5;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
 /*End of Footer*/
 /* 3. Mobile Styles*/
 @media screen AND (max-width: 700px) {
