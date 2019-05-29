@@ -103,7 +103,7 @@ a:hover a:active {
 /*Main Content*/
 /*Background Picture & Tile Template*/
 #content {
-  background-image: url("/franklinnarkwa.github.io/weather/images/clear.jpg");
+  background-image: url("../images/clear.jpg");
 }
 
 .tile {
@@ -132,7 +132,7 @@ a:hover a:active {
 #dial {
   height: 150px;
   width: 150px;
-  background: no-repeat center/85% url("/franklinnarkwa.github.io/weather/images/wind-pointer.png");
+  background: no-repeat center/85% url("../images/wind-pointer.png");
   z-index: 100;
   margin: .6em auto 0; 
 }
@@ -217,23 +217,23 @@ footer {
   }
 
   section.rain {
-    background-image: url("/franklinnarkwa.github.io/weather/images/clear.jpg");
+    background-image: url("../images/rain.jpg");
   }
 
   section.clouds {
-    background-image: url("/franklinnarkwa.github.io/weather/images/clouds.jpg");
+    background-image: url("../images/clouds.jpg");
   }
 
   section.clear {
-    background-image: url("/franklinnarkwa.github.io/weather/images/clear.jpg");
+    background-image: url("../images/clear.jpg");
   }
 
   section.fog {
-    background-image: url("/franklinnarkwa.github.io/weather/images/fog.jpg");
+    background-image: url("../images/fog.jpg");
   }
 
   section.snow {
-    background-image: url("/franklinnarkwa.github.io/weather/images/snow.jpg");
+    background-image: url("../images/snow.jpg");
   }
 }
 
@@ -255,22 +255,22 @@ footer {
   }
 
   section.rain {
-    background-image: url("/franklinnarkwa.github.io/weather/images/clear.jpg");
+    background-image: url("../images/rain.jpg");
   }
 
   section.clouds {
-    background-image: url("/franklinnarkwa.github.io/weather/images/clouds.jpg");
+    background-image: url("../images/clouds.jpg");
   }
 
   section.clear {
-    background-image: url("/franklinnarkwa.github.io/weather/images/clouds.jpg");
+    background-image: url("../images/clear.jpg");
   }
 
   section.fog {
-    background-image: url("/franklinnarkwa.github.io/weather/images/fog.jpg");
+    background-image: url("../images/fog.jpg");
   }
 
   section.snow {
-    background-image: url("/franklinnarkwa.github.io/weather/images/snow.jpg");
+    background-image: url("../images/snow.jpg");
   }
 }
