@@ -1,276 +1,177 @@
+/* ******************************
+*  Stylesheet for Screened Devices
+*  Created by: Augustine Abhulimen
+*  
+*  1.  Includes (fonts and supplementary stylesheets)
+*  1.1 Normalize
+*  1.2 Google fonts
+*
+*  2.  General Styles (for all pages and devices)
+*
+*  3.  Mobile First (styles specific to small screens)
+*
+*  4.  Large Screen Styles (Media Queries begin here)
+*
+* ****************************** */
+
 /* 1.  Includes (fonts and supplementary stylesheets) */
+/* 1.1 Normalize Import */  
+@import url('normalize.css');    
+/* 1.2 Google Font Import */    
+ @import url('https://fonts.googleapis.com/css?family=Sansita');
+ 
 
-@import url('normalize.css');
-/* font from google */
-@import url('https://fonts.googleapis.com/css?family=Sansita');
+ html {
+    box-sizing: border-box;
+    }
+    
+    *,
+    *:before,
+    *:after {
+    box-sizing: inherit;
+    }
+    
+    body {
+    font-family: helvetica, verdana, sans-serif;
+    
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+    font-family: Sansita, Eurostyle, sans-serif;
+    }
+#page-header{
+    display:flex;
+    background-color:#0e89d5;
+   
+}  
 
-/* 2.Styles*/
-html {
-  box-sizing: border-box;
+.containers {border:2px solid black}
+
+#logo{
+    width: 200px;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
+#site-brand{
+    font-size: 90px;
+}    
+#page-nav{
+   
 
-body {
-  font-family: helvetica, verdana, sans-serif;
-  font-size: 20px;
+    background-color: #0e89d5;
+    position: fixed;
+    bottom:0px;
+    width:100vw;
+    
 }
+#page-nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    list-style-type:none;
+    
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Sansita, Eurostyle, sans-serif;
 }
+#city-section1{
+    font-size: 100px;
+    margin: 23px;
+}
+#info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    list-style-type:none;
+    
+}
+.containers{
+    text-align: center;
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 15px;
 
-/*Header*/
-#page-header {
-  background-color: #0e89d5;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
 }
+#bg-image{
+background-image: url("../images/rain.jpg");
+background-size: cover;
 
-#logo {
-  max-width: 60px;
-  max-height: 60px;
-  display: flex;
 }
-
-#site-brand {
-  font-size: 2.3em;
-  margin: 0 auto 0 10px;
-  display: flex;
-  font-weight: 600;
-  position: relative;
+.text{
+    font-size: 100px;
 }
-
-/*End of Header*/
-/* Links*/
-a:link a:visited {
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-
-a:hover a:active {
-  background-color: #0e8900;
-}
-
-/*End of Links*/
-/*Nav*/
-#page-nav {
-  display: flex;
-  justify-content: space-around;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  background-color: #0e89d5;
-  width: 100%;
-  opacity: 1;
-  filter: alpha(opacity=50);
-}
-
-#page-nav a {
-  list-style: none;
-  text-decoration: none;
-  padding: 10px 15px;
-  text-align: center;
-  color: white;
-  background-color: #0e89d5;
-}
-
-/*End of Nav*/
-/*Heading*/
-#heading h1 {
-  font-size: 3em;
-  margin: 1.5px 0 0 auto;
-}
-
-#heading p {
-  margin: 2px 0 0 auto;
-}
-
-/*End of Heading*/
-/*Main Content*/
-/*Background Picture & Tile Template*/
-#content {
-  background-image: url("../images/clear.jpg");
-}
-
-.tile {
-  background-color: rgba(200, 200, 200, .6);
-  margin: .2em auto;
-  text-align: center;
-  border: 1px solid;
-  border-radius: 15px;
-}
-
-/*End of Background Picture & Tile Template*/
-/*Temp*/
-#deg {
-  font-size: 50px;
-}
-
-#high {
-  color: red;
-}
-
-#low {
-  color: blue;
-}
-
-/*End of Temp*/
-#dial {
-  height: 150px;
-  width: 150px;
-  background: no-repeat center/85% url("../images/wind-pointer.png");
-  z-index: 100;
-  margin: .6em auto 0; 
-}
-
-.n {
-  transform: rotate(0deg);
-}
-
-.ne {
-  transform: rotate(45deg);
-}
-
-.e {
-  transform: rotate(90deg);
-}
-
-.se {
-  transform: rotate(135deg);
-}
-
-.s {
-  transform: rotate(180deg);
-}
-
-.sw {
-  transform: rotate(225deg);
-}
-
-.w {
-  transform: rotate(270deg);
-}
-
-.nw {
-  transform: rotate(315deg);
-}
-
-/*Summary Picture*/
-#summary #rainy-weather {
-  max-width: 300px;
-  width: 70%;
-}
-
-/*End of Summary Pitcure*/
-/*Lists*/
-ul li {
-  font-family: helvetica, verdana, sans-serif;
-}
-
-/*End of Lists*/
-/*Footer*/
-#copyright {
-  background-color: #0e89d5;
-}
-
-footer {
-  margin-bottom: 2em;
-}
-#page-footer {
-  background-color: #0e89d5;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
-}
-/*End of Footer*/
-/* 3. Mobile Styles*/
-@media screen AND (max-width: 700px) {
-  #wind {
-    position: relative;
-  }
-  
-  #mph {
+#tem1{
+    font-size:200px;
+    
+    }
+#tem2{
     font-size: 30px;
-    position: absolute;
-    top: 42%;
-    left: 40.5%;
-  }
-
-  div.large-images {
-    display: none;
-  }
-
-  section.rain {
-    background-image: url("../images/rain.jpg");
-  }
-
-  section.clouds {
-    background-image: url("../images/clouds.jpg");
-  }
-
-  section.clear {
-    background-image: url("../images/clear.jpg");
-  }
-
-  section.fog {
-    background-image: url("../images/fog.jpg");
-  }
-
-  section.snow {
-    background-image: url("../images/snow.jpg");
-  }
+    color:red;
+    padding:0.25em;
+    
 }
-
-/* 4. Large Screens*/
-@media screen AND (min-width: 700px) {
-  #wind {
-    position: relative;
-  }
-
-  #mph {
+#tem3{
     font-size: 30px;
-    position: absolute;
-    top: 47.5%;
-    left: 50%;
-  }
+    color:blue;
+    padding:0.25em;
+    }
+#stemps{display:flex; justify-content: center;}
+#feels-like{
+    font-size: 30px; 
+}
+#ivalue{margin-bottom:-4em;}
+/* #wind-direction */
+#condition img{
+    width:50%;
+}
+#forecast{
+   
+    display:flex; 
+    justify-content: center;
+    
+}
+#hourly{
+    list-style-type:none; 
+     display:flex;
+ }
+footer{
+    width:100%;
+    height:50px;
+    background-color:#0e89d5;
+    margin-bottom:80px;
+}
+#forecast-container{
+    margin-top:-1em;
+    background-color:rgba(200,200,200,1);
+    height:140px;
+    margin-bottom: -20px;
+    
+}
+#hourly{
+    
+    overflow: scroll;
+}
+#copyrite{margin-top: 5px;}
+ 
+@media screen and (min-width: 760px){
+    #bg-image{
+        display:flex;
+        flex-grow: 1px;
+        
+               }
 
-  div.small-images {
-    display: none;
-  }
-
-  section.rain {
-    background-image: url("../images/rain.jpg");
-  }
-
-  section.clouds {
-    background-image: url("../images/clouds.jpg");
-  }
-
-  section.clear {
-    background-image: url("../images/clear.jpg");
-  }
-
-  section.fog {
-    background-image: url("../images/fog.jpg");
-  }
-
-  section.snow {
-    background-image: url("../images/snow.jpg");
-  }
+               .text{font-size: 46px;}
+               #tem1 {font-size: 130px;}
+            .containers{width: 325px;}
+            #page-nav {
+                background-color: #0e89d5;
+                position: fixed;
+                top: 223px;
+                width: 100vw;
+                height: 44px;
+            }
+           
 }
