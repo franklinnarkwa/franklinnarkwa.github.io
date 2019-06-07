@@ -85,6 +85,7 @@
     flex-direction: row;
     justify-content: space-around; 
     list-style-type:none;
+    flex-wrap: wrap;
     
 }
 .containers{
@@ -101,7 +102,7 @@ background-size: cover;
 
 }
 .text{
-    font-size: 100px;
+    font-size: 64px;
 }
 #tem1{
     font-size:200px;
