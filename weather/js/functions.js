@@ -15,7 +15,7 @@ function getCondition(){
 //variables  for functions in use
 const temp = 31;
 const speed = 5;
-const direction = "brian";
+const direction = "frank";
 windDial(direction);
 buildWC(speed, temp);
 
