@@ -120,7 +120,7 @@ background-size: cover;
     padding:0.25em;
     }
 #stemps{display:flex; justify-content: center;}
-#feels-like{
+#feelsLike{
     font-size: 30px; 
 }
 #ivalue{margin-bottom:-4em;}
