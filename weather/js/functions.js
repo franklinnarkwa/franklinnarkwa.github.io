@@ -23,7 +23,7 @@ buildWC(speed, temp);
 windDial('e');
 
 //calling the convertMeters function
-let meters =1514.246;
+let meters = 1514.246;
 
 console.log("Meters: " + meters);
 let feet = convertMeters(meters);
@@ -35,7 +35,7 @@ console.log("Feet: " + feet);
 //Calculating and testing the Windchill
 function buildWC(speed, temp) {
    
-    const feelsLike = document.getElementById('feelsLike');
+    const feelsTemp= document.getElementById('feelsTemp');
 
     //calculation for the maths
     let wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);

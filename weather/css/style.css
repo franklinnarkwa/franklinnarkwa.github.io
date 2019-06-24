@@ -119,10 +119,13 @@ background-size: cover;
     color:blue;
     padding:0.25em;
     }
-#stemps{display:flex; justify-content: center;}
-#feelsLike{
+#stemps{display:flex; justify-content: center;
+}
+
+#feelsTemp{
     font-size: 30px; 
 }
+
 #ivalue{margin-bottom:-4em;}
 /* #wind-direction */
 #condition img{
