@@ -32,5 +32,23 @@
   "Elevation": 294.437,
   "Zip": 29601,
   "Hourly": [55, 55, 56, 57, 57, 57, 59, 59, 59, 60, 61, 63, 64]
- }
+ },
+ "Springfield":{
+"City": "Springfield",
+"State": "IL",
+"High":77,
+"Low":48,
+"Temp": 62,
+"Precip": 0,
+"Wind": 5,
+"Direction": "NW",
+"Gusts":"5-10",
+"Summary": "Partly Cloudy",
+"Longitude": -89.670832,
+"Latitude": 39.763908,
+"Elevation": 170,
+"Zip": 62701,
+"Hourly": [55, 56, 57, 60, 63, 72, 74, 75, 76, 77, 76]
+ 
+}
 }

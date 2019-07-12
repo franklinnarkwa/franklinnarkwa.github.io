@@ -1,0 +1,297 @@
+/*
+  This is the style sheet for the Weather Site
+  CSS Table of Contents
+    1. Imports
+    2. General
+    3. Mobile first rules
+    4. Larger screen rules
+*/
+
+/* Section 1 - Imports */
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+@import url('normalize.css');
+
+/* Section 2 - General Rules */
+
+.hide{
+    display: none;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+.tile{
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 15px;
+  }
+
+#page-header {
+    display: flex;
+    background-color: #0E89D5;
+}
+
+#logo{
+    margin: 0px;
+    margin-top: 3px;
+    margin-left: 3px;
+    width: 15%;
+    height: 15%;
+}
+
+#main-head{
+    font-size: 30px;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Sansita', sans-serif;
+    padding: 10px;
+    margin: 0;
+}
+
+nav{
+    background-color: #0E89D5;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style: none; 
+}
+
+nav ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+#pageContent ul{
+    margin: 0px;
+    padding: 0px;
+    padding-left: 3px;
+    display: flex;
+    list-style: none;
+    font-size: 13px;
+}
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+
+#curTemp{
+    font-size: 70px;
+    margin: 10px;
+}
+
+.temp{
+    display: inline;
+    margin-left: 5px;
+}
+
+#high{
+    color: red;
+}
+
+#low{
+    color: blue;
+}
+
+#dial {
+    height: 150px;
+    width: 150px;
+    background: no-repeat center/85% url('/weather/images/wind-pointer.png');
+    z-index: 100;
+    margin: -.6em auto 0;
+}
+
+/* Wind pointer rules */
+.n{
+    transform: rotate(0deg);
+}
+
+.ne{
+    transform: rotate(45deg);
+}
+
+.e{
+    transform: rotate(90deg);
+}
+
+.se{
+    transform: rotate(135deg);
+}
+
+.s{
+    transform: rotate(180deg);
+}
+
+.sw{
+    transform: rotate(225deg);
+}
+
+.w{
+    transform: rotate(270deg);
+}
+
+.nw{
+    transform: rotate(315deg);
+}
+
+#curWeather{
+    /* background-image: url(/weather/images/rain_300.jpg); */
+    background-size: 1500px;
+    text-align: center;
+}
+
+#weatherPic{
+    background-repeat: no-repeat;
+    margin: -.6em auto 0;
+    margin-top: 5px;
+    width: 300px;
+    height: 200px;
+}
+
+.clear{
+    background-image: url("/sandbox_assignment/images/clear_300.jpg");
+}
+
+.cloudy{
+    background-image: url("/sandbox_assignment/images/clouds-small.jpg");
+}
+
+.fog{
+    background-image: url("/sandbox_assignment/images/fog-small.jpg");
+}
+
+.rain{
+    background-image: url("/sandbox_assignment/images/rain-small.jpg");
+}
+
+.snow{
+    background-image: url("/sandbox_assignment/images/snow-small.jpg");
+}
+
+footer{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 67px;
+    background-color:#0E89D5;
+}
+
+#hourly h2{
+    text-align: center;
+}
+
+#hourly ul{
+    overflow: auto;
+    overflow: scroll;
+    white-space: nowrap;
+    margin-top: 0px;
+    padding-left: 5px;
+}
+
+#hourly ul li{
+    display: inline-block;
+    padding: 3px;
+    text-decoration: none;
+}
+
+/* Section 3 - Mobile Rules */
+
+#mph{
+    font-size: 18px;
+    margin-top: -90px;
+    margin-bottom: 70px;
+}
+
+#move{
+    margin-top: -90px; 
+    margin-bottom: 90px;
+}
+
+#mphGV{
+    font-size: 18px;
+    margin-top: -90px;
+    margin-bottom: 70px;
+}
+
+#wind{
+    position: relative;
+}
+
+/* Section 4 - Larger Rules */
+@media screen and (min-width: 800px){
+    #logo{
+        width: 50px;
+    }
+
+    #page-content ul{
+        font-size: 20px;
+        margin-left: 7px;
+    }
+
+    nav {
+        position: static;
+    }
+
+    nav ul{
+        margin: 0;
+    }
+
+    #curWeather{
+        background-size: 1500px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tile{
+        flex-grow: 1;
+    }
+    
+    #weatherPic{
+        margin: -.6em auto 0;
+        margin-top: 5px;
+        width: 400px;
+        height: 200px;  
+    }
+
+    .clear{
+        background-image: url("/sandbox_assignment/images/clear-large.jpg");
+    }
+    
+    .cloudy{
+        background-image: url("/sandbox_assignment/images/clouds-large.jpg");
+    }
+    
+    .fog{
+        background-image: url("/sandbox_assignment/images/fog-large.jpg");
+    }
+    
+    .rain{
+        background-image: url("/sandbox_assignment/images/rain-large.jpg");
+    }
+    
+    .snow{
+        background-image: url("/sandbox_assignment/images/snow-large.jpg");
+    }
+
+    #hourly ul li{
+        font-size: 25px;
+    }
+
+    footer {
+        margin-bottom: 0;
+    }
+}

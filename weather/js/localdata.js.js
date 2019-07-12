@@ -8,7 +8,8 @@
 let pageNav = document.getElementById('page-nav');
 let statusContainer = document.getElementById('status');
 let contentContainer = document.getElementById('main-content');
-let weatherURL ="js/weather.json";
+let hourlyList = document.getElementById('hourlyData');
+let weatherURL ="/greenville-local/js/weather.json";
 
 fetchData(weatherURL);
 
