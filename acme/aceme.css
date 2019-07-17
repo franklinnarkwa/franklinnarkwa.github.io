@@ -1,0 +1,121 @@
+@import url('normalize.css');    
+/* 1.2 Google Font Import */    
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+
+
+body{
+    background-image: url("/franklinnarkwa.github.io/aceme_home/acme/images/site/background.jpg");
+    font-family: helvetica, verdana, sans-serif;
+}
+
+#main-content{
+
+
+
+}
+#background-image{ 
+    background-color:white;
+}
+
+#page-nav{
+   
+
+    background-color: #de2226;
+    position: top;
+    
+    width:100vw;
+    
+}
+#page-nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    list-style-type:none;
+    height: 3em;
+    margin: 0.8em;
+}
+#navlist{
+    color:white;
+}
+
+
+#welcometoacme{
+   padding:0;
+   margin:0;
+   border:0;
+   font-size: 2em;
+}
+#sec2{
+display:flex;
+flex-direction:row;
+justify-content:space-around;
+
+}
+#listA{
+color: red;
+list-style-type:none;
+
+
+}
+
+#first{
+background-image: url("/franklinnarkwa.github.io/aceme_home/acme/images/site/feature.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+margin-top:1.5em;
+list-style-type:none;
+display: flex;
+justify-content:flex-end;
+image: url("/franklinnarkwa.github.io/aceme_home/acme/images/site/feature.jpg");
+} 
+#list{
+    display:flex;
+    
+    
+}
+.food-picture{
+    background:gray;
+    justify-content:space-between;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+#list1{
+list-style-type:none;
+text-decoration: underline blue;
+color:blue;
+display:flex;
+}
+
+#list2{ 
+    color:black;
+    margin:22px;
+    }
+
+#firsta{
+    height: 297px;
+}
+
+#copyrite{
+   display:flex;
+   text-align: center; 
+   border-top-style: solid;
+}
+
+.picandtext{
+display:flex;
+align-items:center;
+}
+
+
+
+@media screen and (min-width: 320px) {
+
+
+
+
+
+
+
+
+}

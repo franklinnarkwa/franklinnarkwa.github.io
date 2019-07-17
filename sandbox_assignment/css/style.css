@@ -111,7 +111,7 @@ body{
 #dial {
     height: 150px;
     width: 150px;
-    background: no-repeat center/85% url('/weather/images/wind-pointer.png');
+    background: no-repeat center/85% url('/franklinnarkwa.github.io/sandbox_assignment/images/wind-pointer.png');
     z-index: 100;
     margin: -.6em auto 0;
 }
@@ -164,23 +164,23 @@ body{
 }
 
 .clear{
-    background-image: url("/sandbox_assignment/images/clear_300.jpg");
+    background-image: url("/franklinnarkwa.github.io/sandbox_assignment/images/clear_small.jpg");
 }
 
 .cloudy{
-    background-image: url("/sandbox_assignment/images/clouds-small.jpg");
+    background-image: url("/franklinnarkwa.github.io/sandbox_assignment/images/clouds_small.jpg");
 }
 
 .fog{
-    background-image: url("/sandbox_assignment/images/fog-small.jpg");
+    background-image: url("/franklinnarkwa.github.io/sandbox_assignment/images/fog_small.jpg");
 }
 
 .rain{
-    background-image: url("/sandbox_assignment/images/rain-small.jpg");
+    background-image: url("/franklinnarkwa.github.io/sandbox_assignment/images/rain_small.jpg");
 }
 
 .snow{
-    background-image: url("/sandbox_assignment/images/snow-small.jpg");
+    background-image: url("/franklinnarkwa.github.io/sandbox_assignment/images/snow_small.jpg");
 }
 
 footer{
@@ -268,23 +268,23 @@ footer{
     }
 
     .clear{
-        background-image: url("/sandbox_assignment/images/clear-large.jpg");
+        background-image: url("/franklinnarkwa.github.io/sandbox_assignment/images/clear_large.jpg");
     }
     
     .cloudy{
-        background-image: url("/sandbox_assignment/images/clouds-large.jpg");
+        background-image: url("/franklinnarkwa.github.io/sandbox_assignment/images/clouds_large.jpg");
     }
     
     .fog{
-        background-image: url("/sandbox_assignment/images/fog-large.jpg");
+        background-image: url("/franklinnarkwa.github.io/sandbox_assignment/images/fog_large.jpg");
     }
     
     .rain{
-        background-image: url("/sandbox_assignment/images/rain-large.jpg");
+        background-image: url("/franklinnarkwa.github.io/sandbox_assignment/images/rain_large.jpg");
     }
     
     .snow{
-        background-image: url("/sandbox_assignment/images/snow-large.jpg");
+        background-image: url("/franklinnarkwa.github.io/sandbox_assignment/images/rain_large.jpg");
     }
 
     #hourly ul li{
