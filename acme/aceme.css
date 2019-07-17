@@ -59,14 +59,14 @@ list-style-type:none;
 }
 
 #first{
-background-image: url("/franklinnarkwa.github.io/aceme_home/acme/images/site/feature.jpg");
+background-image: url("/franklinnarkwa.github.io/acme/images/site/feature.jpg");
 background-repeat: no-repeat;
 background-size: cover;
 margin-top:1.5em;
 list-style-type:none;
 display: flex;
 justify-content:flex-end;
-image: url("/franklinnarkwa.github.io/aceme_home/acme/images/site/feature.jpg");
+image: url("/franklinnarkwa.github.io/acme/images/site/feature.jpg");
 } 
 #list{
     display:flex;
