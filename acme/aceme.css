@@ -10,9 +10,8 @@ body{
 
 #main-content{
 
-
-
 }
+
 #background-image{ 
     background-color:white;
 }
@@ -66,7 +65,7 @@ margin-top:1.5em;
 list-style-type:none;
 display: flex;
 justify-content:flex-end;
-image: url("/franklinnarkwa.github.io/acme/images/site/feature.jpg");
+range: url("/franklinnarkwa.github.io/acme/images/site/feature.jpg");
 } 
 #list{
     display:flex;
